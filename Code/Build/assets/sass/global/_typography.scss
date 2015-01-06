@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, h6 {}
+
+p, li, a, label{}
+
+p {}
+
+a {}
+
+
+/* TABLET PORTRAIT
+ *************************************************************/
+@media all and (min-width: $tablet-portrait-sml) {}
+
+

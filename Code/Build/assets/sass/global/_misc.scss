@@ -1,0 +1,33 @@
+.center-text {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
+
+// .bg-yellow {
+// 	@include bg-color($col-yellow);
+// }
+
+
+.show-mobile {
+	display: block;
+}
+
+.show-desktop {
+	display: none;
+}
+
+/* TABLET PORTRAIT
+ *************************************************************/
+@media all and (min-width: $tablet-portrait-sml) {
+	.show-desktop {
+		display: block;
+	}
+
+	.show-mobile {
+		display: none;
+	}
+}
+

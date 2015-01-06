@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             homepage: 'http://owzzz.github.io/The_Polyglot'
         },
         // Configurable App Directories
-        thePolyGlot: {
+        rewletka: {
             buildPath: 'Build',
             distributionPath: 'Dist',
             sassPath: 'Build/assets/sass',
@@ -37,16 +37,16 @@ module.exports = function(grunt) {
             },
             assemble: {
             	files: [
-                    '<%= thePolyGlot.buildPath %>/views/**/*.{hbs,json}'
+                    '<%= rewletka.buildPath %>/views/**/*.{hbs,json}'
                 ],
                 tasks: ['assemble']
             },
             compass: {
-                files: '<%= thePolyGlot.buildPath %>/assets/sass/**/*.scss',
+                files: '<%= rewletka.buildPath %>/assets/sass/**/*.scss',
                 tasks: ['compass', 'autoprefixer']
             },
             browserify: {
-                files: ['<%= thePolyGlot.buildPath %>/assets/js/**/*.js'], 
+                files: ['<%= rewletka.buildPath %>/assets/js/**/*.js'], 
                 tasks: ['browserify:build']
             }
         }, 
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     open: true,
-                    base: '<%= thePolyGlot.distributionPath %>'
+                    base: '<%= rewletka.distributionPath %>'
                 }
             }
         },
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     dot: true,
-                    src: ['<%= thePolyGlot.distributionPath %>/*']
+                    src: ['<%= rewletka.distributionPath %>/*']
                 }]
             }
         },
@@ -86,28 +86,28 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= thePolyGlot.buildPath %>/assets/js/{,*/}*.js',
-                '!<%= thePolyGlot.buildPath %>/assets/js/vendor/*'
+                '<%= rewletka.buildPath %>/assets/js/{,*/}*.js',
+                '!<%= rewletka.buildPath %>/assets/js/vendor/*'
             ]
         },
         // Compass
         // https://github.com/gruntjs/grunt-contrib-compass
         compass: {
             options: {
-                generatedImagesDir: '<%= thePolyGlot.distributionPath %>',
-                httpImagesPath: '<%= thePolyGlot.distributionPath %>/assets/img',
-                httpGeneratedImagesPath: '<%= thePolyGlot.distributionPath %>/assets/img',
-                httpFontsPath: '<%= thePolyGlot.distributionPath %>/assets/fonts',
+                generatedImagesDir: '<%= rewletka.distributionPath %>',
+                httpImagesPath: '<%= rewletka.distributionPath %>/assets/img',
+                httpGeneratedImagesPath: '<%= rewletka.distributionPath %>/assets/img',
+                httpFontsPath: '<%= rewletka.distributionPath %>/assets/fonts',
                 relativeAssets: false
             },
             build: {
                 options: {
-                    cssDir: '<%= thePolyGlot.distributionPath %>/assets/css',
-                    specify: ['<%= thePolyGlot.buildPath %>/assets/sass/main.scss'],
-                    sassDir: '<%= thePolyGlot.buildPath %>/assets/sass',
-                    imagesDir: '<%= thePolyGlot.distributionPath %>/assets/img',
-                    javascriptDir: '<%= thePolyGlot.buildPath %>/assets/js',
-                    fontsDir: '<%= thePolyGlot.buildPath %>/assets/fonts',
+                    cssDir: '<%= rewletka.distributionPath %>/assets/css',
+                    specify: ['<%= rewletka.buildPath %>/assets/sass/main.scss'],
+                    sassDir: '<%= rewletka.buildPath %>/assets/sass',
+                    imagesDir: '<%= rewletka.distributionPath %>/assets/img',
+                    javascriptDir: '<%= rewletka.buildPath %>/assets/js',
+                    fontsDir: '<%= rewletka.buildPath %>/assets/fonts',
                     relativeAssets: false
                 }
             }
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
         browserify: {
             build: {
                 files: {
-                    '<%= thePolyGlot.distributionPath %>/assets/js/main.min.js': ['<%= thePolyGlot.buildPath %>/assets/js/main.js']
+                    '<%= rewletka.distributionPath %>/assets/js/main.min.js': ['<%= rewletka.buildPath %>/assets/js/main.js']
                 },
                 options: {
                     alias: browserifySiteConfig,
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    '<%= thePolyGlot.distributionPath %>/assets/js/main.min.js': ['<%= thePolyGlot.buildPath %>/assets/js/main.js']
+                    '<%= rewletka.distributionPath %>/assets/js/main.min.js': ['<%= rewletka.buildPath %>/assets/js/main.js']
                 },
                 options: {
                     alias: browserifySiteConfig,
@@ -144,9 +144,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= thePolyGlot.distributionPath %>/assets/css/',
+                    cwd: '<%= rewletka.distributionPath %>/assets/css/',
                     src: '{,*/}*.css',
-                    dest: '<%= thePolyGlot.distributionPath %>/assets/css/'
+                    dest: '<%= rewletka.distributionPath %>/assets/css/'
                 }]
             }
         },
@@ -156,7 +156,7 @@ module.exports = function(grunt) {
         cssmin: {
             dist: {
                 files: {
-                    '<%= thePolyGlot.distributionPath %>/assets/css/main.css': ['<%= thePolyGlot.distributionPath %>/assets/css/main.css']
+                    '<%= rewletka.distributionPath %>/assets/css/main.css': ['<%= rewletka.distributionPath %>/assets/css/main.css']
                 }
             }
         },
@@ -166,7 +166,7 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    '<%= thePolyGlot.distributionPath %>/assets/js/main.min.js': ['<%= thePolyGlot.distributionPath %>/assets/js/main.min.js']
+                    '<%= rewletka.distributionPath %>/assets/js/main.min.js': ['<%= rewletka.distributionPath %>/assets/js/main.min.js']
                 }
             }
         },
@@ -178,8 +178,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     dot: true,
-                    cwd: '<%= thePolyGlot.buildPath %>',
-                    dest: '<%= thePolyGlot.distributionPath %>',
+                    cwd: '<%= rewletka.buildPath %>',
+                    dest: '<%= rewletka.distributionPath %>',
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
@@ -197,17 +197,17 @@ module.exports = function(grunt) {
         assemble: {
             options: {
                 flatten: true,
-                partials: ['<%= thePolyGlot.buildPath %>/views/partials/**/*.hbs'],
-                helpers: ['<%= thePolyGlot.buildPath %>/views/helpers/*.js']
+                partials: ['<%= rewletka.buildPath %>/views/partials/**/*.hbs'],
+                helpers: ['<%= rewletka.buildPath %>/views/helpers/*.js']
             },
             build: {
                 options: {
-                    layout: '<%= thePolyGlot.buildPath %>/views/layouts/default.hbs',
-                    data: ['<%= thePolyGlot.buildPath %>/views/data/**/*.json'],
+                    layout: '<%= rewletka.buildPath %>/views/layouts/default.hbs',
+                    data: ['<%= rewletka.buildPath %>/views/data/**/*.json'],
                     flatten: true
                 },
                 files: {
-                    '<%= thePolyGlot.distributionPath %>/': ['<%= thePolyGlot.buildPath %>/views/pages/**/*.hbs'],
+                    '<%= rewletka.distributionPath %>/': ['<%= rewletka.buildPath %>/views/pages/**/*.hbs'],
                 }
             }
         },
