@@ -1,4 +1,8 @@
 .main-wrapper {
+	width: 1280px;
+	max-width: 1280px;
+	margin: 0 auto;
+
 	.main-content {
 
 	}
@@ -10,7 +14,23 @@
 @media all and (min-width: $tablet-portrait-sml) {
 	.main-wrapper {
 		.main-content {
-			
+			section {
+				display: table;
+				width: 100%;
+				overflow: hidden;
+
+				.content {
+					display: table-cell;
+					vertical-align: middle;
+					max-width: 623px;
+					margin: 0 auto;
+					text-align: center;
+
+					p {
+						text-align: justify;
+					}
+				}
+			}
 		}
 	}
 }

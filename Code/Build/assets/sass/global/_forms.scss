@@ -6,6 +6,31 @@ input[type=text]:-webkit-autofill, input[type=email]:-webkit-autofill {}
 
 textarea {}
 
+.button {
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+
+.button-green {
+	background-color: $col-green;
+	color: $col-white;
+}
+
+.button-gold {
+	background-color: $col-gold;
+	color: $col-black;
+}
+
+.button-black {
+	background-color: $col-black;
+	color: $col-white;
+}
+
+.button-white {
+	background-color: $col-white;
+	color: $col-black;
+}
+
 /* TABLET PORTRAIT
  *************************************************************/
 

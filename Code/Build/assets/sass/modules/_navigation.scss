@@ -1,7 +1,13 @@
-.main-navigation {}
+.main-nav {
+    a {
+        color: $col-grey;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
 
 /* TABLET PORTRAIT
  *************************************************************/
 @media only screen and (min-device-width : $tablet-portrait-sml) {
-    .main-navigation {}
+    .main-nav {}
 }

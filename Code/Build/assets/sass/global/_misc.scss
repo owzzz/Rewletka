@@ -6,9 +6,21 @@
 	text-align: justify;
 }
 
-// .bg-yellow {
-// 	@include bg-color($col-yellow);
-// }
+.bg-gold {
+	@include bg-color($col-gold);
+}
+
+.bg-green {
+	@include bg-color($col-green);	
+}
+
+.border-gold {
+	border-color: $col-gold;
+}
+
+.border-white {
+	border-color: $col-white;
+}
 
 
 .show-mobile {

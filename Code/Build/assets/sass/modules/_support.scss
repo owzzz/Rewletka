@@ -1,13 +1,7 @@
-footer {
-	background: $col-black;
-}
-
-
-
 /* TABLET PORTRAIT
  *************************************************************/
 @media only screen and (min-device-width : $tablet-portrait-sml) {
-    footer {
-    	min-height: 297px;
+    .support {
+    	min-height: 469px;
     }
 }

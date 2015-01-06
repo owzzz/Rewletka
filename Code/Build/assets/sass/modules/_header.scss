@@ -1,8 +1,13 @@
-header {}
+header {
+	background: $col-black;
+	height: 70px;
+}
 
 
 /* TABLET PORTRAIT
  *************************************************************/
 @media all and (min-width: $tablet-portrait-sml) {
-    header {}
+    header {
+
+    }
 }

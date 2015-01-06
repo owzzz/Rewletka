@@ -1,13 +1,9 @@
-footer {
-	background: $col-black;
-}
-
-
 
 /* TABLET PORTRAIT
  *************************************************************/
 @media only screen and (min-device-width : $tablet-portrait-sml) {
-    footer {
-    	min-height: 297px;
+    .hero {
+    	min-height: 830px;
+    	background: url("http://placehold.it/1280x830") 0 0 no-repeat;
     }
 }
