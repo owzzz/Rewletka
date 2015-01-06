@@ -1,0 +1,5 @@
+{
+  "directory": "assets/js/vendor",
+  "cwd": "Build/",
+  "analytics": true
+}
