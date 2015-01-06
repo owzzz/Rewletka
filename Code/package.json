@@ -1,21 +1,21 @@
 {
-  "name": "The_Polyglot",
+  "name": "Rewletka",
   "version": "0.0.0",
-  "description": "The_Polyglot ============",
+  "description": "Rewletka",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/owzzz/The_Polyglot.git"
+    "url": "https://github.com/owzzz/Rewletka.git"
   },
   "author": "Owain Llewellyn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/owzzz/The_Polyglot/issues"
+    "url": "https://github.com/owzzz/Rewletka/issues"
   },
-  "homepage": "https://github.com/owzzz/The_Polyglot",
+  "homepage": "https://github.com/owzzz/Rewletka",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-sass": "^0.8.1",
@@ -32,7 +32,6 @@
     "cssmin": "^0.4.2",
     "autoprefixer": "^4.0.0",
     "grunt-contrib-clean": "^0.6.0",
-    "angular-route": "^1.3.2",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-browserify": "^3.2.0",
     "grunt-autoprefixer": "^2.0.0"

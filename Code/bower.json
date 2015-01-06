@@ -1,9 +1,9 @@
 {
-  "name": "The_Polyglot",
+  "name": "Rewletka",
   "version": "0.0.0",
-  "homepage": "https://github.com/owzzz/The_Polyglot",
+  "homepage": "https://github.com/owzzz/Rewletka",
   "authors": [
-    "Owain Lleweellyn <owain.llew@gmail.com>"
+    "Owain Llewellyn <owain.llew@gmail.com>"
   ],
   "main": "main.js",
   "license": "MIT",
