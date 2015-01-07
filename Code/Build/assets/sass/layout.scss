@@ -14,22 +14,32 @@
 @media all and (min-width: $tablet-portrait-sml) {
 	.main-wrapper {
 		.main-content {
-			section {
-				display: table;
-				width: 100%;
-				overflow: hidden;
+			
+		}
+	}
 
-				.content {
-					display: table-cell;
-					vertical-align: middle;
-					max-width: 623px;
-					margin: 0 auto;
-					text-align: center;
+	section, footer {
+		display: table;
+		width: 100%;
+		overflow: hidden;
 
-					p {
-						text-align: justify;
-					}
-				}
+		.content {
+			display: table-cell;
+			vertical-align: middle;
+			max-width: 623px;
+			margin: 0 auto;
+			text-align: center;
+
+			h2 {
+				font-size: 21px;
+				letter-spacing: 13px;
+				width: 574px;
+				padding: 20px 0;
+				margin: 0 auto;
+			}
+
+			p {
+				text-align: center;
 			}
 		}
 	}

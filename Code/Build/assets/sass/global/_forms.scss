@@ -1,6 +1,13 @@
 form {}
 
-input[type=text], input[type=password], input[type=email], textarea {	}
+input[type=text], input[type=password], input[type=email], textarea {
+	background: $col-black;
+	color: $col-white;
+	border: 1px solid $col-white;
+	font-size: 12px;
+	padding: 14px 20px;
+	min-width: 306px;
+}
 
 input[type=text]:-webkit-autofill, input[type=email]:-webkit-autofill {}
 

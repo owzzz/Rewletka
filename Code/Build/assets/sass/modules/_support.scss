@@ -3,5 +3,39 @@
 @media only screen and (min-device-width : $tablet-portrait-sml) {
     .support {
     	min-height: 469px;
+
+    	.content {
+    		padding-bottom: 13px;
+		
+			h2 {
+				margin-bottom: 30px;
+				font-size: 32px;
+				width: 618px;
+			}
+
+	    	.ks-logo {
+	    		width: 393px;
+	    		height: 44px;
+	    		margin: 0 auto;
+	    		margin-bottom: 53px;
+	    	}
+
+	    	a {
+	    		display: block;
+				width: 200px;
+				height: 57px;
+				margin: 0 auto;
+				vertical-align: middle;
+				clear: both;
+				text-decoration: none;
+				line-height: 61px;
+				font-size: 16px;
+
+				&:hover {
+					background: $col-black;
+				}
+	    	}
+
+    	}
     }
 }

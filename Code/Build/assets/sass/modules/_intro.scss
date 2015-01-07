@@ -7,5 +7,24 @@
 @media only screen and (min-device-width : $tablet-portrait-sml) {
     .intro {
 		min-height: 424px;
+		.content {
+			padding-bottom: 17px;
+
+			h2 {
+				font-size: 29px;
+				letter-spacing: 13px;
+				width: 621px;
+				padding: 20px 0;
+				margin-bottom: 20px;
+			}	
+
+			p {
+				width: 582px;
+				margin: 0 auto;
+				line-height: 24px;
+				font-size: 13px;
+			}
+		}
+		
     }
 }

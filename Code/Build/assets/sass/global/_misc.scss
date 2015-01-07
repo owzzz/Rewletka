@@ -15,13 +15,25 @@
 }
 
 .border-gold {
-	border-color: $col-gold;
+	border-color: $col-gold!important;
 }
 
 .border-white {
-	border-color: $col-white;
+	border-color: $col-white!important;
 }
 
+.double-border {
+	border-top: 2px solid $col-white;			
+	border-bottom: 2px solid $col-white;
+}
+
+.single-border-bottom {		
+	border-bottom: 2px solid $col-white;
+}
+
+.single-border-top {
+	border-top: 2px solid $col-white;
+}
 
 .show-mobile {
 	display: block;

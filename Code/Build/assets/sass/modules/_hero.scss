@@ -1,9 +1,57 @@
+.hero {
+	min-height: 830px;
+	background: url("../img/static/hero.png") 0 -70px no-repeat;
+
+	.content {
+		position: relative;
+		padding-top: 13px;
+
+		h1 {
+			background: url("../img/static/hero-logo.png") 0 0 no-repeat;
+			text-indent: -9999999px;
+    		overflow: hidden;
+    		margin: 0 auto 46px auto;
+		}
+
+		h2 {
+			color: $col-white;
+			margin: 0 auto 69px auto;
+		}
+
+		.icon-play {
+			height: 67px;
+			width: 67px;
+			background: url("../img/icons/icon-play.png") 0 0 no-repeat;
+			overflow: hidden;
+			text-indent: -99999px;
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+
+		&:after {
+			content: "";
+			height: 13px;
+			width: 28px;
+			background: url("../img/icons/icon-down-arrow.png") 0 0 no-repeat;
+			position: absolute;
+			bottom: 59px;
+			left: calc(50% - 14px);
+		}
+	}
+}
 
 /* TABLET PORTRAIT
  *************************************************************/
 @media only screen and (min-device-width : $tablet-portrait-sml) {
     .hero {
+    	.content {
+    		h1 {
+    			width:686px;
+    			height: 83px;
+    		}
+    	}
     	min-height: 830px;
-    	background: url("http://placehold.it/1280x830") 0 0 no-repeat;
+    	background: url("../img/static/hero.png") 0 -70px no-repeat;
     }
 }

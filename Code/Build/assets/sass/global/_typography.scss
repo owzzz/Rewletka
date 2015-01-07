@@ -1,6 +1,11 @@
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $primary-font;
+	text-transform: uppercase;
+}
 
-p, li, a, label{}
+p, li, a, label{
+	font-family: $primary-font;
+}
 
 p {
 	color: $col-charcoal;
@@ -8,6 +13,10 @@ p {
 
 a {
 	color: $col-gold;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 
