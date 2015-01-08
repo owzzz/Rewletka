@@ -6,6 +6,13 @@
 		position: relative;
 		padding-top: 13px;
 
+		opacity: 0;
+		-webkit-transform: translate(0,90px);
+		-ms-transform: translate(0,90px);
+		transform: translate(0,90px);
+
+		
+
 		h1 {
 			background: url("../img/static/hero-logo.png") 0 0 no-repeat;
 			text-indent: -9999999px;
@@ -27,6 +34,14 @@
 			display: block;
 			margin: 0 auto;
 			cursor: pointer;
+
+			-webkit-animation-name: 'pulse_animation';
+			-webkit-animation-duration: 5000ms;
+			-webkit-transform-origin:70% 70%;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+
 		}
 
 		&:after {
@@ -38,8 +53,31 @@
 			bottom: 59px;
 			left: calc(50% - 14px);
 		}
+
+		&.fade-in {
+			-webkit-transition: opacity 0.8s 0.5s, -webkit-transform 0.8s 0.5s ease;
+			transition: opacity 0.8s 0.5s, transform 0.8s 0.5s ease;
+
+			opacity: 1;
+			-webkit-transform: translate(0,0);
+			-ms-transform: translate(0,0);
+			transform: translate(0,0);	
+		}
 	}
 }
+
+@-webkit-keyframes pulse_animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.08); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+
 
 /* TABLET PORTRAIT
  *************************************************************/
