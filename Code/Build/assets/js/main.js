@@ -1,6 +1,9 @@
 (function() {
 	"use strict";
 	$(document).ready(function() {
-		$('.hero .content').addClass('fade-in');
+		setTimeout(function() {
+			$('html').addClass('fade-in');
+		}, 750);
+		
 	});
 })();

@@ -53,17 +53,17 @@
 			bottom: 59px;
 			left: calc(50% - 14px);
 		}
-
-		&.fade-in {
-			-webkit-transition: opacity 0.8s 0.5s, -webkit-transform 0.8s 0.5s ease;
-			transition: opacity 0.8s 0.5s, transform 0.8s 0.5s ease;
-
-			opacity: 1;
-			-webkit-transform: translate(0,0);
-			-ms-transform: translate(0,0);
-			transform: translate(0,0);	
-		}
 	}
+}
+
+.fade-in .hero .content {
+	-webkit-transition: opacity 0.8s 0.5s, -webkit-transform 0.8s 0.5s ease;
+	transition: opacity 0.8s 0.5s, transform 0.8s 0.5s ease;
+
+	opacity: 1;
+	-webkit-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);	
 }
 
 @-webkit-keyframes pulse_animation {
